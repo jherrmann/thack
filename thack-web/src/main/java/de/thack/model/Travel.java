@@ -5,6 +5,8 @@ import java.util.List;
 
 import org.joda.time.DateTime;
 
+import de.thack.api.sabre.model.Flight;
+
 public class Travel  {
 
 	private String startPlace;
@@ -20,6 +22,16 @@ public class Travel  {
 	private Double budget;
 
 	private List<Itinerary> itineraries = new ArrayList<Itinerary>();
+
+	private Flight defaultFlight;
+	
+	public Flight getDefaultFlight() {
+		return defaultFlight;
+	}
+
+	public void setDefaultFlight(Flight defaultFlight) {
+		this.defaultFlight = defaultFlight;
+	}
 
 	public List<Itinerary> getItineraries() {
 		return itineraries;

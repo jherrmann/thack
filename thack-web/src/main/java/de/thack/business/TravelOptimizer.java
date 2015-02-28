@@ -44,6 +44,8 @@ public class TravelOptimizer {
 						.toString(DateTimeFormat.forPattern("YYYY-MM-dd")));
 		if (foundFlights != null) {
 			for (Flight flight : foundFlights) {
+				// should be only one 
+				travel.setDefaultFlight(flight);
 				flight.printOut();
 			}
 		}
