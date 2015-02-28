@@ -1,9 +1,11 @@
 package de.thack.controller;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.logging.Logger;
 
-import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.Conversation;
+import javax.enterprise.context.ConversationScoped;
 import javax.enterprise.inject.Produces;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
@@ -16,8 +18,10 @@ import de.thack.model.Itinerary;
 import de.thack.model.Travel;
 
 @Named
-@RequestScoped
-public class SearchController {
+@ConversationScoped
+public class SearchController implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	@Inject
 	private FacesContext facesContext;
@@ -28,12 +32,16 @@ public class SearchController {
 	@Inject
 	private Logger logger;
 
+	@Inject
+	private Conversation conversation;
+
 	@Named
 	@Produces
-	@RequestScoped
+	@ConversationScoped 
 	private Travel travel = new Travel();
 
-	public void search() throws JsonProcessingException, IOException {
+	public String search() throws JsonProcessingException, IOException {
+		beginConversation();
 		logger.info("Wassss uppp");
 		logger.info(travel.getStartPlace());
 		logger.info(travel.getStartTime().toString());
@@ -53,7 +61,7 @@ public class SearchController {
 			itinerary.getFromTopToDestination().printOut();
 		}
 		logger.info("-------------------------------------------");
-
+		return "success";
 	}
 
 	public Travel getTravel() {
@@ -62,6 +70,22 @@ public class SearchController {
 
 	public void setTravel(Travel travel) {
 		this.travel = travel;
+	}
+
+	private void beginConversation() {
+		if (conversation.isTransient()) {
+			conversation.begin();
+
+			return;
+		}
+	}
+
+	private void endConversation() {
+		if (!conversation.isTransient()) {
+			conversation.end();
+
+			return;
+		}
 	}
 
 }

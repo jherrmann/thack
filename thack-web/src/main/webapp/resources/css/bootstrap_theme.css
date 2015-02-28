@@ -54,6 +54,15 @@ body {
 	background-position: bottom;
 }
 
+.find_all {
+	height: 427px;
+	margin-bottom: 60px;
+	background-image: url("#{resource['img:view_themes.jpg']}");
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
 .carousel h1, h2 {
 	/* font-family: "Playfair Display", serif; */
 }

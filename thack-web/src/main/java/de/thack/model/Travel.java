@@ -1,11 +1,17 @@
 package de.thack.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.joda.time.DateTime;
 
-public class Travel  {
+public class Travel implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	private String startPlace;
 
@@ -80,7 +86,5 @@ public class Travel  {
 	public void addItinerary(Itinerary itinerary) {
 		itineraries.add(itinerary);
 	}
-
-	
 
 }

@@ -1,6 +1,7 @@
 package de.thack.business;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.List;
 import java.util.logging.Logger;
@@ -20,7 +21,12 @@ import de.thack.model.Travel;
 /**
  * @author j2ee
  */
-public class TravelOptimizer {
+public class TravelOptimizer implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Inject
 	SabreAPI sabreAPI;
