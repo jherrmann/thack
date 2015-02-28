@@ -7,6 +7,9 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import de.thack.domainobjects.Flight;
+import de.thack.service.ParseInstaFlightService;
+
 public class Main1 {
 
 	// http://localhost:8080/RESTfulExample/json/product/get
@@ -35,9 +38,15 @@ public class Main1 {
 
 			String output;
 			System.out.println("Output from Server .... \n");
-			while ((output = br.readLine()) != null) {
-				System.out.println(output);
-			}
+			output = br.readLine();
+//			while ((output = br.readLine()) != null) {
+//				System.out.println(output);
+//			}
+
+			// prase output
+			Flight flight = ParseInstaFlightService.parseInstaFlight(output);
+			
+			// parse output end
 
 			conn.disconnect();
 
