@@ -19,7 +19,7 @@ public class GetYourGuideAPI {
 		String urlString = "http://api-getyourguide-com-test3.gygtest.com/1/tours?currency=USD&cnt_language=en&q="+locationName;
 		if(date != null && date.length() > 0)
 			urlString = urlString + "&date="+date;
-
+		System.out.println(urlString);
 		URL url = new URL(urlString);
 		
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();

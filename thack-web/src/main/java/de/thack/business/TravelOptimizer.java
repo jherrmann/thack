@@ -11,6 +11,9 @@ import javax.inject.Inject;
 import org.codehaus.jackson.JsonProcessingException;
 import org.joda.time.format.DateTimeFormat;
 
+import de.thack.api.getyourguide.GetYourGuideAPI;
+import de.thack.api.getyourguide.model.Tour;
+import de.thack.api.getyourguide.model.TourResponse;
 import de.thack.api.sabre.SabreAPI;
 import de.thack.api.sabre.model.Destination;
 import de.thack.api.sabre.model.Flight;
@@ -30,6 +33,9 @@ public class TravelOptimizer implements Serializable{
 
 	@Inject
 	SabreAPI sabreAPI;
+	
+	@Inject
+	GetYourGuideAPI getYourGuideAPI;
 
 	@Inject
 	Logger log;
@@ -44,6 +50,8 @@ public class TravelOptimizer implements Serializable{
 						.toString(DateTimeFormat.forPattern("YYYY-MM-dd")));
 		if (foundFlights != null) {
 			for (Flight flight : foundFlights) {
+				// should be only one 
+				travel.setDefaultFlight(flight);
 				flight.printOut();
 			}
 		}
@@ -62,7 +70,7 @@ public class TravelOptimizer implements Serializable{
 			Itinerary itinerary = new Itinerary();
 			
 			String destinationLocationTop = destination.getDestination().getDestinationLocation();
-			itinerary.setTopDesintion(destinationLocationTop);
+			itinerary.setTopDestination(destinationLocationTop);
 
 			System.out.println("Top Dest " + i + " "
 					+ destinationLocationTop);
@@ -106,9 +114,40 @@ public class TravelOptimizer implements Serializable{
 			if (itinerary.getFromOriginToTop() != null
 					&& itinerary.getFromTopToDestination() != null) {
 				travel.addItinerary(itinerary);
-				Collections.sort(travel.getItineraries(), new Itinerary());
+				
+				// find top attractions at topDestination
+				if(itinerary.getTopDestination().equals("WAS") || itinerary.getTopDestination().equals("NYC")) {
+					String topDestinationLongName = null;
+					if(itinerary.getTopDestination().equals("WAS")) {
+						topDestinationLongName = "Washington, DC";
+					} else if(itinerary.getTopDestination().equals("NYC")) {
+						topDestinationLongName = "New%20York";
+					}
+					
+					TourResponse tourResponse = getYourGuideAPI.searchTours(topDestinationLongName, travel.getStartTime().toString(DateTimeFormat.forPattern("YYYY-MM-dd'T'HH:mm:ss")));
+					List<Tour> tours = tourResponse.getData().getTours();
+					// add Tours to Itinerary as long as budget last but no more then 3
+					int nrTours = 0;
+					for (Tour tour : tours) {
+						if(nrTours >= 3)
+							break;
+						if(itinerary.getTotalPrice() + Double.valueOf(tour.getPrice().getValues().getAmount().toString()) < travel.getBudget()){
+							itinerary.addTour(tour);
+							log.info("added tour "+tour.getTitle() + " Price: "+ tour.getPrice().getValues().getAmount().toString());
+						}
+						nrTours++;
+					}
+					
+				} else {
+					log.info("top Destination LogName '"+topDestination+"'not Found !!!!!!!!!!!!!!!!");
+				}
+				
 			}
 		}
+		
+
+		Collections.sort(travel.getItineraries(), new Itinerary());
+		
 		return travel;
 	}
 
