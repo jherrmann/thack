@@ -105,6 +105,11 @@ public class SabreAPI {
 		System.out.println("Output from Server .... \n");
 		output = br.readLine();
 
+//		ObjectMapper mapper = new ObjectMapper();
+//		JsonNode readTree = mapper.readTree(output);
+//		 System.out.println(mapper.defaultPrettyPrintingWriter().writeValueAsString(readTree));
+		
+		
 		// parse output
 		 TopDestinationResponse parseTopDestination = ParseTopDestinationService.parseTopDestination(output);
 		

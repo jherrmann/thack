@@ -12,13 +12,13 @@ import org.joda.time.format.DateTimeFormat;
 public class LocalDateConverter implements Converter {
 	public Object getAsObject(FacesContext facesContext,
 			UIComponent uiComponent, String localDateInTextFormat) {
-		return DateTimeFormat.forPattern("yyyy-MM-dd").parseDateTime(
+		return DateTimeFormat.forPattern("YYYY-MM-dd").parseDateTime(
 				localDateInTextFormat);
 	}
 
 	public String getAsString(FacesContext facesContext,
 			UIComponent uiComponent, Object localDate) {
-		return DateTimeFormat.forPattern("yyyy-MM-dd").print(
+		return DateTimeFormat.forPattern("YYYY-MM-dd").print(
 				(DateTime) localDate);
 	}
 }
