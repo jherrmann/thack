@@ -111,12 +111,12 @@ public class TravelOptimizer {
 				if(itinerary.getTopDestination().equals("WAS") || itinerary.getTopDestination().equals("NYC")) {
 					String topDestinationLongName = null;
 					if(itinerary.getTopDestination().equals("WAS")) {
-						topDestinationLongName = "Washington";
+						topDestinationLongName = "Washington, DC";
 					} else if(itinerary.getTopDestination().equals("NYC")) {
-						topDestinationLongName = "New York";
+						topDestinationLongName = "New%20York";
 					}
 					
-					TourResponse tourResponse = getYourGuideAPI.searchTours(topDestinationLongName, travel.getStartTime().toString(DateTimeFormat.forPattern("YYYY-MM-dd")));
+					TourResponse tourResponse = getYourGuideAPI.searchTours(topDestinationLongName, travel.getStartTime().toString(DateTimeFormat.forPattern("YYYY-MM-dd'T'HH:mm:ss")));
 					List<Tour> tours = tourResponse.getData().getTours();
 					// add Tours to Itinerary as long as budget last but no more then 3
 					int nrTours = 0;
@@ -127,6 +127,7 @@ public class TravelOptimizer {
 							itinerary.addTour(tour);
 							log.info("added tour "+tour.getTitle() + " Price: "+ tour.getPrice().getValues().getAmount().toString());
 						}
+						nrTours++;
 					}
 					
 				} else {

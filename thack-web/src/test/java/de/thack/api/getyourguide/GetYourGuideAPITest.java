@@ -16,7 +16,8 @@ public class GetYourGuideAPITest {
 
 		// MyClass is tested
 		GetYourGuideAPI getYourGuideAPI = new GetYourGuideAPI();
-		TourResponse tours = getYourGuideAPI.searchTours("Miami", "2015-03-03T00:00:00");
+
+		TourResponse tours = getYourGuideAPI.searchTours("New%20York", "2015-03-12T00:00:00");
 
 		// Tests
 		assertEquals("Should have result", false, tours.getData().getTours().isEmpty());
@@ -28,11 +29,11 @@ public class GetYourGuideAPITest {
 
 		// MyClass is tested
 		GetYourGuideAPI getYourGuideAPI = new GetYourGuideAPI();
-		TourResponse tours = getYourGuideAPI.searchTours("Miami", null);
+		TourResponse tours = getYourGuideAPI.searchTours("Washington, DC", "2015-03-12T00:00:00");
 
 		// Tests
 		assertEquals("Should have result", false, tours.getData().getTours().isEmpty());
-
+		tours.printOut();
 	}	
 	
 }
