@@ -1,4 +1,4 @@
-package de.thack.domainobjects;
+package de.thack.api.sabre.model;
 
 import java.util.LinkedList;
 import java.util.List;

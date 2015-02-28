@@ -6,7 +6,7 @@ import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 
-import de.thack.domainobjects.TopDestinationResponse;
+import de.thack.api.sabre.model.TopDestinationResponse;
 
 public class ParseTopDestinationService {
 

@@ -8,8 +8,8 @@ import org.codehaus.jackson.JsonProcessingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.joda.time.DateTime;
 
-import de.thack.domainobjects.Flight;
-import de.thack.domainobjects.FlightSegment;
+import de.thack.api.sabre.model.Flight;
+import de.thack.api.sabre.model.FlightSegment;
 
 public class ParseInstaFlightService {
 

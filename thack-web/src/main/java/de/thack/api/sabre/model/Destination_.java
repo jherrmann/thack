@@ -1,5 +1,5 @@
 
-package de.thack.domainobjects;
+package de.thack.api.sabre.model;
 
 import java.util.HashMap;
 import java.util.Map;

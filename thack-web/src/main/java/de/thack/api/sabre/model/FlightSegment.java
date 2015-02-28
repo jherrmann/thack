@@ -1,4 +1,4 @@
-package de.thack.domainobjects;
+package de.thack.api.sabre.model;
 
 import org.joda.time.DateTime;
 

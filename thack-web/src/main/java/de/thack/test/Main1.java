@@ -7,8 +7,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import de.thack.domainobjects.Flight;
-import de.thack.domainobjects.TopDestinationResponse;
+import de.thack.api.sabre.model.Flight;
+import de.thack.api.sabre.model.TopDestinationResponse;
 import de.thack.service.ParseInstaFlightService;
 import de.thack.service.ParseTopDestinationService;
 

@@ -1,5 +1,5 @@
 
-package de.thack.domainobjects;
+package de.thack.api.sabre.model;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,59 +12,58 @@ import org.codehaus.jackson.annotate.JsonIgnore;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.codehaus.jackson.annotate.JsonPropertyOrder;
 
-
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
-    "Rank",
-    "Destination"
+    "rel",
+    "href"
 })
-public class Destination {
+public class Link {
 
-    @org.codehaus.jackson.annotate.JsonProperty("Rank")
-    private Integer Rank;
-    @JsonProperty("Destination")
-    private Destination_ Destination;
+    @JsonProperty("rel")
+    private String rel;
+    @JsonProperty("href")
+    private String href;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * 
      * @return
-     *     The Rank
+     *     The rel
      */
-    @JsonProperty("Rank")
-    public Integer getRank() {
-        return Rank;
+    @JsonProperty("rel")
+    public String getRel() {
+        return rel;
     }
 
     /**
      * 
-     * @param Rank
-     *     The Rank
+     * @param rel
+     *     The rel
      */
-    @JsonProperty("Rank")
-    public void setRank(Integer Rank) {
-        this.Rank = Rank;
+    @JsonProperty("rel")
+    public void setRel(String rel) {
+        this.rel = rel;
     }
 
     /**
      * 
      * @return
-     *     The Destination
+     *     The href
      */
-    @JsonProperty("Destination")
-    public Destination_ getDestination() {
-        return Destination;
+    @JsonProperty("href")
+    public String getHref() {
+        return href;
     }
 
     /**
      * 
-     * @param Destination
-     *     The Destination
+     * @param href
+     *     The href
      */
-    @JsonProperty("Destination")
-    public void setDestination(Destination_ Destination) {
-        this.Destination = Destination;
+    @JsonProperty("href")
+    public void setHref(String href) {
+        this.href = href;
     }
 
     @JsonAnyGetter
