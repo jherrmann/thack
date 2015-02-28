@@ -16,17 +16,19 @@ public class SearchController {
 
 	@Inject
 	private FacesContext facesContext;
-	
+
 	@Inject
 	private Logger logger;
-	
+
 	@Named
 	@Produces
 	@RequestScoped
-	private Travel travel;
+	private Travel travel = new Travel();
 
 	public void search() {
 		logger.info("Wassss uppp");
+		logger.info(travel.getStartPlace());
+		logger.info(travel.getStartTime().toString());
 	}
 
 	public Travel getTravel() {
@@ -36,7 +38,5 @@ public class SearchController {
 	public void setTravel(Travel travel) {
 		this.travel = travel;
 	}
-	
-	
 
 }

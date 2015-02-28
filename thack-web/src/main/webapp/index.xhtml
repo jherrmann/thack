@@ -34,39 +34,55 @@
 							<p>Note: If you're viewing this page via a URL, the "next"
 								and "previous" Glyphicon buttons on the left and right might not
 								load/display properly due to web browser security rules.</p>
-								
+
 							<h:form id="searchForm" styleClass="form-horizontal">
 								<div class="form-group">
 									<label for="start_place" class="col-sm-4 control-label">Start</label>
 									<div class="col-sm-8">
-										<h:inputText id="start_place" />
+										<h:inputText id="start_place" value="#{travel.startPlace}" />
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="stop_place" class="col-sm-4 control-label">Destination</label>
 									<div class="col-sm-8">
-										<h:inputText id="stop_place" />
+										<h:inputText id="stop_place" value="#{travel.stopPlace}" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="start_place" class="col-sm-4 control-label">From</label>
+									<div class="col-sm-8">
+										<h:inputText id="start_time" value="#{travel.startTime}"
+											converter="localDateConverter" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="start_place" class="col-sm-4 control-label">To</label>
+									<div class="col-sm-8">
+										<h:inputText id="stop_time" value="#{travel.stopTime}"
+											converter="localDateConverter" />
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="stop_place" class="col-sm-4 control-label">Duration
 										of Stay</label>
 									<div class="col-sm-8">
-										<h:inputText id="stop_duration" />
+										<h:inputText id="stop_duration"
+											value="#{travel.durationAtStop}" />
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="stop_place" class="col-sm-4 control-label">Overall
 										Duration</label>
 									<div class="col-sm-8">
-										<h:inputText id="overall_duration" />
+										<h:inputText id="overall_duration"
+											value="#{travel.durationAtAll}" />
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="stop_place" class="col-sm-4 control-label">Budget
 										to Spend</label>
 									<div class="col-sm-8">
-										<h:inputText id="budget" />
+										<h:inputText id="budget" value="#{travel.budget}" />
 									</div>
 								</div>
 								<div class="form-group">
