@@ -22,121 +22,196 @@
 	template="/WEB-INF/templates/default.xhtml">
 	<ui:define name="content">
 
+		<!-- Carousel
+    ================================================== -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>SeeMore Search</h1>
+							<p>Note: If you're viewing this page via a URL, the "next"
+								and "previous" Glyphicon buttons on the left and right might not
+								load/display properly due to web browser security rules.</p>
+								
+							<h:form id="searchForm" styleClass="form-horizontal">
+								<div class="form-group">
+									<label for="start_place" class="col-sm-4 control-label">Start</label>
+									<div class="col-sm-8">
+										<h:inputText id="start_place" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="stop_place" class="col-sm-4 control-label">Destination</label>
+									<div class="col-sm-8">
+										<h:inputText id="stop_place" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="stop_place" class="col-sm-4 control-label">Duration
+										of Stay</label>
+									<div class="col-sm-8">
+										<h:inputText id="stop_duration" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="stop_place" class="col-sm-4 control-label">Overall
+										Duration</label>
+									<div class="col-sm-8">
+										<h:inputText id="overall_duration" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="stop_place" class="col-sm-4 control-label">Budget
+										to Spend</label>
+									<div class="col-sm-8">
+										<h:inputText id="budget" />
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-4 col-sm-8">
+										<h:commandButton id="see_more" styleClass="btn btn-default"
+											value="SeeMore!" action="#{searchController.search}" />
+									</div>
+								</div>
+							</h:form>
+							<h1>Enjoy Wonderful Feelings</h1>
+							<p>Proin faucibus malesuada dui, ut porta arcu pretium
+								consequat. Ut iaculis dui at gravida....</p>
+							<div style="margin-top: 60px;">
+								<p>
+									<i class="fa fa-facebook fa-2x fa-fw margin-bottom"></i> <i
+										class="fa fa-twitter fa-2x fa-fw margin-bottom"></i> <i
+										class="fa fa-rss fa-2x fa-fw margin-bottom"></i> <i
+										class="fa fa-youtube fa-2x fa-fw margin-bottom"></i> <i
+										class="fa fa-vine fa-2x fa-fw margin-bottom"></i>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.carousel -->
+
 		<!-- Marketing messaging and featurettes
     ================================================== -->
 		<!-- Wrap the rest of the page in another container to center all the content. -->
 
-		<div class="container marketing">
+		<div class="container">
+			<div class="container marketing">
 
-			<!-- Three columns of text below the carousel -->
-			<div class="row">
-				<div class="col-lg-4">
-					<img class="img-circle"
-						src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-						alt="Generic placeholder image"
-						style="width: 140px; height: 140px;"></img>
-					<h2>Heading</h2>
-					<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis
-						euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
-						Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-						Praesent commodo cursus magna.</p>
-					<p>
-						<a class="btn btn-default" href="#" role="button">View details
-							</a>
-					</p>
+				<!-- Three columns of text below the carousel -->
+				<div class="row">
+					<div class="col-lg-4">
+						<img class="img-circle"
+							src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+							alt="Generic placeholder image"
+							style="width: 140px; height: 140px;"></img>
+						<h2>Heading</h2>
+						<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis
+							euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+							Praesent commodo cursus magna.</p>
+						<p>
+							<a class="btn btn-default" href="#" role="button">View
+								details </a>
+						</p>
+					</div>
+					<!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<img class="img-circle"
+							src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+							alt="Generic placeholder image"
+							style="width: 140px; height: 140px;"></img>
+						<h2>Heading</h2>
+						<p>Duis mollis, est non commodo luctus, nisi erat porttitor
+							ligula, eget lacinia odio sem nec elit. Cras mattis consectetur
+							purus sit amet fermentum. Fusce dapibus, tellus ac cursus
+							commodo, tortor mauris condimentum nibh.</p>
+						<p>
+							<a class="btn btn-default" href="#" role="button">View
+								details </a>
+						</p>
+					</div>
+					<!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<img class="img-circle"
+							src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+							alt="Generic placeholder image"
+							style="width: 140px; height: 140px;"></img>
+						<h2>Heading</h2>
+						<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis
+							in, egestas eget quam. Vestibulum id ligula porta felis euismod
+							semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+							condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+						<p>
+							<a class="btn btn-default" href="#" role="button">View
+								details </a>
+						</p>
+					</div>
+					<!-- /.col-lg-4 -->
 				</div>
-				<!-- /.col-lg-4 -->
-				<div class="col-lg-4">
-					<img class="img-circle"
-						src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-						alt="Generic placeholder image"
-						style="width: 140px; height: 140px;"></img>
-					<h2>Heading</h2>
-					<p>Duis mollis, est non commodo luctus, nisi erat porttitor
-						ligula, eget lacinia odio sem nec elit. Cras mattis consectetur
-						purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo,
-						tortor mauris condimentum nibh.</p>
-					<p>
-						<a class="btn btn-default" href="#" role="button">View details
-							</a>
-					</p>
+				<!-- /.row -->
+
+
+				<!-- START THE FEATURETTES -->
+
+				<hr class="featurette-divider"></hr>
+
+				<div class="row featurette">
+					<div class="col-md-7">
+						<h2 class="featurette-heading">
+							First featurette heading. <span class="text-muted">It'll
+								blow your mind.</span>
+						</h2>
+						<p class="lead">Donec ullamcorper nulla non metus auctor
+							fringilla. Vestibulum id ligula porta felis euismod semper.
+							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+							Fusce dapibus, tellus ac cursus commodo.</p>
+					</div>
+					<div class="col-md-5">
+						<img class="featurette-image img-responsive"
+							data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
+					</div>
 				</div>
-				<!-- /.col-lg-4 -->
-				<div class="col-lg-4">
-					<img class="img-circle"
-						src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-						alt="Generic placeholder image"
-						style="width: 140px; height: 140px;"></img>
-					<h2>Heading</h2>
-					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis
-						in, egestas eget quam. Vestibulum id ligula porta felis euismod
-						semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-						condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-					<p>
-						<a class="btn btn-default" href="#" role="button">View details
-							</a>
-					</p>
+
+				<hr class="featurette-divider"></hr>
+
+				<div class="row featurette">
+					<div class="col-md-5">
+						<img class="featurette-image img-responsive"
+							data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
+					</div>
+					<div class="col-md-7">
+						<h2 class="featurette-heading">
+							Oh yeah, it's that good. <span class="text-muted">See for
+								yourself.</span>
+						</h2>
+						<p class="lead">Donec ullamcorper nulla non metus auctor
+							fringilla. Vestibulum id ligula porta felis euismod semper.
+							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+							Fusce dapibus, tellus ac cursus commodo.</p>
+					</div>
 				</div>
-				<!-- /.col-lg-4 -->
-			</div>
-			<!-- /.row -->
 
+				<hr class="featurette-divider"></hr>
 
-			<!-- START THE FEATURETTES -->
-
-			<hr class="featurette-divider"></hr>
-
-			<div class="row featurette">
-				<div class="col-md-7">
-					<h2 class="featurette-heading">
-						First featurette heading. <span class="text-muted">It'll
-							blow your mind.</span>
-					</h2>
-					<p class="lead">Donec ullamcorper nulla non metus auctor
-						fringilla. Vestibulum id ligula porta felis euismod semper.
-						Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-						Fusce dapibus, tellus ac cursus commodo.</p>
-				</div>
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive"
-						data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
-				</div>
-			</div>
-
-			<hr class="featurette-divider"></hr>
-
-			<div class="row featurette">
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive"
-						data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
-				</div>
-				<div class="col-md-7">
-					<h2 class="featurette-heading">
-						Oh yeah, it's that good. <span class="text-muted">See for
-							yourself.</span>
-					</h2>
-					<p class="lead">Donec ullamcorper nulla non metus auctor
-						fringilla. Vestibulum id ligula porta felis euismod semper.
-						Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-						Fusce dapibus, tellus ac cursus commodo.</p>
-				</div>
-			</div>
-
-			<hr class="featurette-divider"></hr>
-
-			<div class="row featurette">
-				<div class="col-md-7">
-					<h2 class="featurette-heading">
-						And lastly, this one. <span class="text-muted">Checkmate.</span>
-					</h2>
-					<p class="lead">Donec ullamcorper nulla non metus auctor
-						fringilla. Vestibulum id ligula porta felis euismod semper.
-						Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-						Fusce dapibus, tellus ac cursus commodo.</p>
-				</div>
-				<div class="col-md-5">
-					<img class="featurette-image img-responsive"
-						data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
+				<div class="row featurette">
+					<div class="col-md-7">
+						<h2 class="featurette-heading">
+							And lastly, this one. <span class="text-muted">Checkmate.</span>
+						</h2>
+						<p class="lead">Donec ullamcorper nulla non metus auctor
+							fringilla. Vestibulum id ligula porta felis euismod semper.
+							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+							Fusce dapibus, tellus ac cursus commodo.</p>
+					</div>
+					<div class="col-md-5">
+						<img class="featurette-image img-responsive"
+							data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
+					</div>
 				</div>
 			</div>
 		</div>
