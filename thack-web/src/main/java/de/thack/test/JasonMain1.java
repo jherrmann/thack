@@ -15,22 +15,14 @@ public class JasonMain1 {
 		User user = new User();
 		ObjectMapper mapper = new ObjectMapper();
 
-		String test = "{\"age\":29,\"messages\":[\"msg 1\",\"msg 2\",\"msg 3\"],\"name\":\"mkyong\"}";
-
+		String test = "";
+		
+		
 		User jsonUser = mapper.readValue(test, User.class);
 		
-		JsonNode readTree = mapper.readTree(test);
-		JsonNode path = readTree.path("messages");
-		for (Iterator<JsonNode> iterator = path.getElements(); iterator.hasNext();) {
-			System.out.println(iterator.next().toString());
-			
-		}
-		
-		System.out.println(readTree.get("age"));
-		
 		System.out.println(jsonUser.getName());
-		System.out.println(jsonUser.getMessages().size());
-		System.out.println(jsonUser.getMessages().get(1));
+		System.out.println(jsonUser.getMessagesee().size());
+		System.out.println(jsonUser.getMessagesee().get(1));
 
 		
 	}

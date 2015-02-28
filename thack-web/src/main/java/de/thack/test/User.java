@@ -1,30 +1,36 @@
 package de.thack.test;
- 
+
 import java.util.ArrayList;
 import java.util.List;
 
 import org.codehaus.jackson.annotate.JsonIgnore;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import org.codehaus.jackson.annotate.JsonProperty;
 
 public class User {
- 
+
 	@JsonIgnore
 	private int age = 29;
-	private String name = "mkyong";
-	private List<String> messages = new ArrayList<String>() {
+	
+    @JsonProperty("messages")
+	private List<String> messagesee = new ArrayList<String>() {
 		{
 			add("msg 1");
 			add("msg 2");
 			add("msg 3");
 		}
 	};
- 
-	//getter and setter methods
- 
+
+	private String name = "mkyong";
+
+
+
+	// getter and setter methods
+
 	@Override
 	public String toString() {
-		return "User [age=" + age + ", name=" + name + ", " +
-				"messages=" + messages + "]";
+		return "User [age=" + age + ", name=" + name + ", " + "messages="
+				+ messagesee + "]";
 	}
 
 	public int getAge() {
@@ -43,13 +49,14 @@ public class User {
 		this.name = name;
 	}
 
-	public List<String> getMessages() {
-		return messages;
+	public List<String> getMessagesee() {
+		return messagesee;
 	}
 
-	public void setMessages(List<String> messages) {
-		this.messages = messages;
+	public void setMessagesee(List<String> messagesee) {
+		this.messagesee = messagesee;
 	}
-	
-	
+
+
+
 }

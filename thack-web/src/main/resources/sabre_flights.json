@@ -1,0 +1,2109 @@
+[ {
+  "AirItinerary" : {
+    "OriginDestinationOptions" : {
+      "OriginDestinationOption" : [ {
+        "FlightSegment" : [ {
+          "DepartureAirport" : {
+            "LocationCode" : "MIA"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 203,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : "32B"
+          },
+          "DepartureDateTime" : "2015-03-12T10:59:00",
+          "ArrivalDateTime" : "2015-03-12T13:22:00",
+          "FlightNumber" : 1661,
+          "OnTimePerformance" : {
+            "Level" : 7
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1661,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -4
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        }, {
+          "DepartureAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "LAS"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -7
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 183,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "I",
+          "Equipment" : {
+            "AirEquipType" : "M80"
+          },
+          "DepartureDateTime" : "2015-03-12T17:15:00",
+          "ArrivalDateTime" : "2015-03-12T18:18:00",
+          "FlightNumber" : 1389,
+          "OnTimePerformance" : {
+            "Level" : 5
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1389,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        } ],
+        "ElapsedTime" : 619
+      }, {
+        "FlightSegment" : [ {
+          "DepartureAirport" : {
+            "LocationCode" : "LAS"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 160,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : "M80"
+          },
+          "DepartureDateTime" : "2015-03-20T06:00:00",
+          "ArrivalDateTime" : "2015-03-20T10:40:00",
+          "FlightNumber" : 1088,
+          "OnTimePerformance" : {
+            "Level" : 9
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1088,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -7
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        }, {
+          "DepartureAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "MIA"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -4
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 159,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "I",
+          "Equipment" : {
+            "AirEquipType" : "32B"
+          },
+          "DepartureDateTime" : "2015-03-20T12:05:00",
+          "ArrivalDateTime" : "2015-03-20T15:44:00",
+          "FlightNumber" : 1462,
+          "OnTimePerformance" : {
+            "Level" : 6
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1462,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        } ],
+        "ElapsedTime" : 404
+      } ]
+    },
+    "DirectionInd" : "Return"
+  },
+  "TPA_Extensions" : {
+    "ValidatingCarrier" : {
+      "Code" : "US"
+    }
+  },
+  "SequenceNumber" : 32,
+  "AirItineraryPricingInfo" : {
+    "PTC_FareBreakdowns" : {
+      "PTC_FareBreakdown" : {
+        "FareBasisCodes" : {
+          "FareBasisCode" : [ {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "MIA",
+            "ArrivalAirportCode" : "DFW",
+            "content" : "OD00ZSL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "DFW",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "LAS",
+            "content" : "OB07ZTL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "LAS",
+            "ArrivalAirportCode" : "DFW",
+            "content" : "OB07ZTL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "DFW",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "MIA",
+            "content" : "OD00ZSL3"
+          } ]
+        },
+        "PassengerTypeQuantity" : {
+          "Quantity" : 1,
+          "Code" : "ADT"
+        },
+        "PassengerFare" : {
+          "FareConstruction" : {
+            "CurrencyCode" : "USD",
+            "DecimalPlaces" : 2,
+            "Amount" : 247.44
+          },
+          "TotalFare" : {
+            "CurrencyCode" : "USD",
+            "Amount" : "311.20"
+          },
+          "Taxes" : {
+            "TotalTax" : {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "Amount" : 63.76
+            },
+            "Tax" : [ {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "US1",
+              "Amount" : 18.56
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "ZP",
+              "Amount" : "16.00"
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "AY",
+              "Amount" : "11.20"
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "XF",
+              "Amount" : "18.00"
+            } ]
+          },
+          "BaseFare" : {
+            "CurrencyCode" : "USD",
+            "Amount" : 247.44
+          },
+          "EquivFare" : {
+            "CurrencyCode" : "USD",
+            "DecimalPlaces" : 2,
+            "Amount" : 247.44
+          }
+        }
+      }
+    },
+    "FareInfos" : {
+      "FareInfo" : [ {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      } ]
+    },
+    "TPA_Extensions" : {
+      "DivideInParty" : {
+        "Indicator" : false
+      }
+    },
+    "ItinTotalFare" : {
+      "FareConstruction" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      },
+      "TotalFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : "311.20"
+      },
+      "Taxes" : {
+        "Tax" : [ {
+          "CurrencyCode" : "USD",
+          "DecimalPlaces" : 2,
+          "TaxCode" : "TOTALTAX",
+          "Amount" : 63.76
+        } ]
+      },
+      "BaseFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      },
+      "EquivFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      }
+    }
+  },
+  "TicketingInfo" : {
+    "TicketType" : "eTicket"
+  }
+},  {
+  "AirItinerary" : {
+    "OriginDestinationOptions" : {
+      "OriginDestinationOption" : [ {
+        "FlightSegment" : [ {
+          "DepartureAirport" : {
+            "LocationCode" : "MIA"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 202,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : "32B"
+          },
+          "DepartureDateTime" : "2015-03-12T11:45:00",
+          "ArrivalDateTime" : "2015-03-12T14:07:00",
+          "FlightNumber" : 1615,
+          "OnTimePerformance" : {
+            "Level" : 8
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1615,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -4
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        }, {
+          "DepartureAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "LAS"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -7
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 179,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : 757
+          },
+          "DepartureDateTime" : "2015-03-12T18:50:00",
+          "ArrivalDateTime" : "2015-03-12T19:49:00",
+          "FlightNumber" : 27,
+          "OnTimePerformance" : {
+            "Level" : 7
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 27,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        } ],
+        "ElapsedTime" : 664
+      }, {
+        "FlightSegment" : [ {
+          "DepartureAirport" : {
+            "LocationCode" : "LAS"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 160,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : "M80"
+          },
+          "DepartureDateTime" : "2015-03-20T06:00:00",
+          "ArrivalDateTime" : "2015-03-20T10:40:00",
+          "FlightNumber" : 1088,
+          "OnTimePerformance" : {
+            "Level" : 9
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1088,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -7
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        }, {
+          "DepartureAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "MIA"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -4
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 162,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "I",
+          "Equipment" : {
+            "AirEquipType" : 757
+          },
+          "DepartureDateTime" : "2015-03-20T13:50:00",
+          "ArrivalDateTime" : "2015-03-20T17:32:00",
+          "FlightNumber" : 1412,
+          "OnTimePerformance" : {
+            "Level" : 4
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1412,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        } ],
+        "ElapsedTime" : 512
+      } ]
+    },
+    "DirectionInd" : "Return"
+  },
+  "TPA_Extensions" : {
+    "ValidatingCarrier" : {
+      "Code" : "US"
+    }
+  },
+  "SequenceNumber" : 39,
+  "AirItineraryPricingInfo" : {
+    "PTC_FareBreakdowns" : {
+      "PTC_FareBreakdown" : {
+        "FareBasisCodes" : {
+          "FareBasisCode" : [ {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "MIA",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "DFW",
+            "content" : "OD00ZSL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "DFW",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "LAS",
+            "content" : "OB07ZTL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "LAS",
+            "ArrivalAirportCode" : "DFW",
+            "content" : "OB07ZTL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "DFW",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "MIA",
+            "content" : "OD00ZSL3"
+          } ]
+        },
+        "PassengerTypeQuantity" : {
+          "Quantity" : 1,
+          "Code" : "ADT"
+        },
+        "PassengerFare" : {
+          "FareConstruction" : {
+            "CurrencyCode" : "USD",
+            "DecimalPlaces" : 2,
+            "Amount" : 247.44
+          },
+          "TotalFare" : {
+            "CurrencyCode" : "USD",
+            "Amount" : "311.20"
+          },
+          "Taxes" : {
+            "TotalTax" : {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "Amount" : 63.76
+            },
+            "Tax" : [ {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "US1",
+              "Amount" : 18.56
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "ZP",
+              "Amount" : "16.00"
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "AY",
+              "Amount" : "11.20"
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "XF",
+              "Amount" : "18.00"
+            } ]
+          },
+          "BaseFare" : {
+            "CurrencyCode" : "USD",
+            "Amount" : 247.44
+          },
+          "EquivFare" : {
+            "CurrencyCode" : "USD",
+            "DecimalPlaces" : 2,
+            "Amount" : 247.44
+          }
+        }
+      }
+    },
+    "FareInfos" : {
+      "FareInfo" : [ {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      } ]
+    },
+    "TPA_Extensions" : {
+      "DivideInParty" : {
+        "Indicator" : false
+      }
+    },
+    "ItinTotalFare" : {
+      "FareConstruction" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      },
+      "TotalFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : "311.20"
+      },
+      "Taxes" : {
+        "Tax" : [ {
+          "CurrencyCode" : "USD",
+          "DecimalPlaces" : 2,
+          "TaxCode" : "TOTALTAX",
+          "Amount" : 63.76
+        } ]
+      },
+      "BaseFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      },
+      "EquivFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      }
+    }
+  },
+  "TicketingInfo" : {
+    "TicketType" : "eTicket"
+  }
+}, {
+  "AirItinerary" : {
+    "OriginDestinationOptions" : {
+      "OriginDestinationOption" : [ {
+        "FlightSegment" : [ {
+          "DepartureAirport" : {
+            "LocationCode" : "MIA"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 202,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : "32B"
+          },
+          "DepartureDateTime" : "2015-03-12T11:45:00",
+          "ArrivalDateTime" : "2015-03-12T14:07:00",
+          "FlightNumber" : 1615,
+          "OnTimePerformance" : {
+            "Level" : 8
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1615,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -4
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        }, {
+          "DepartureAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "LAS"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -7
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 183,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "I",
+          "Equipment" : {
+            "AirEquipType" : "M80"
+          },
+          "DepartureDateTime" : "2015-03-12T17:15:00",
+          "ArrivalDateTime" : "2015-03-12T18:18:00",
+          "FlightNumber" : 1389,
+          "OnTimePerformance" : {
+            "Level" : 5
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1389,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        } ],
+        "ElapsedTime" : 573
+      }, {
+        "FlightSegment" : [ {
+          "DepartureAirport" : {
+            "LocationCode" : "LAS"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 160,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : "M80"
+          },
+          "DepartureDateTime" : "2015-03-20T06:00:00",
+          "ArrivalDateTime" : "2015-03-20T10:40:00",
+          "FlightNumber" : 1088,
+          "OnTimePerformance" : {
+            "Level" : 9
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1088,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -7
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        }, {
+          "DepartureAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "MIA"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -4
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 162,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "I",
+          "Equipment" : {
+            "AirEquipType" : 757
+          },
+          "DepartureDateTime" : "2015-03-20T13:50:00",
+          "ArrivalDateTime" : "2015-03-20T17:32:00",
+          "FlightNumber" : 1412,
+          "OnTimePerformance" : {
+            "Level" : 4
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1412,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        } ],
+        "ElapsedTime" : 512
+      } ]
+    },
+    "DirectionInd" : "Return"
+  },
+  "TPA_Extensions" : {
+    "ValidatingCarrier" : {
+      "Code" : "US"
+    }
+  },
+  "SequenceNumber" : 40,
+  "AirItineraryPricingInfo" : {
+    "PTC_FareBreakdowns" : {
+      "PTC_FareBreakdown" : {
+        "FareBasisCodes" : {
+          "FareBasisCode" : [ {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "MIA",
+            "ArrivalAirportCode" : "DFW",
+            "content" : "OD00ZSL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "DFW",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "LAS",
+            "content" : "OB07ZTL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "LAS",
+            "ArrivalAirportCode" : "DFW",
+            "content" : "OB07ZTL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "DFW",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "MIA",
+            "content" : "OD00ZSL3"
+          } ]
+        },
+        "PassengerTypeQuantity" : {
+          "Quantity" : 1,
+          "Code" : "ADT"
+        },
+        "PassengerFare" : {
+          "FareConstruction" : {
+            "CurrencyCode" : "USD",
+            "DecimalPlaces" : 2,
+            "Amount" : 247.44
+          },
+          "TotalFare" : {
+            "CurrencyCode" : "USD",
+            "Amount" : "311.20"
+          },
+          "Taxes" : {
+            "TotalTax" : {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "Amount" : 63.76
+            },
+            "Tax" : [ {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "US1",
+              "Amount" : 18.56
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "ZP",
+              "Amount" : "16.00"
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "AY",
+              "Amount" : "11.20"
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "XF",
+              "Amount" : "18.00"
+            } ]
+          },
+          "BaseFare" : {
+            "CurrencyCode" : "USD",
+            "Amount" : 247.44
+          },
+          "EquivFare" : {
+            "CurrencyCode" : "USD",
+            "DecimalPlaces" : 2,
+            "Amount" : 247.44
+          }
+        }
+      }
+    },
+    "FareInfos" : {
+      "FareInfo" : [ {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      } ]
+    },
+    "TPA_Extensions" : {
+      "DivideInParty" : {
+        "Indicator" : false
+      }
+    },
+    "ItinTotalFare" : {
+      "FareConstruction" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      },
+      "TotalFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : "311.20"
+      },
+      "Taxes" : {
+        "Tax" : [ {
+          "CurrencyCode" : "USD",
+          "DecimalPlaces" : 2,
+          "TaxCode" : "TOTALTAX",
+          "Amount" : 63.76
+        } ]
+      },
+      "BaseFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      },
+      "EquivFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      }
+    }
+  },
+  "TicketingInfo" : {
+    "TicketType" : "eTicket"
+  }
+},  {
+  "AirItinerary" : {
+    "OriginDestinationOptions" : {
+      "OriginDestinationOption" : [ {
+        "FlightSegment" : [ {
+          "DepartureAirport" : {
+            "LocationCode" : "MIA"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 202,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : "32B"
+          },
+          "DepartureDateTime" : "2015-03-12T11:45:00",
+          "ArrivalDateTime" : "2015-03-12T14:07:00",
+          "FlightNumber" : 1615,
+          "OnTimePerformance" : {
+            "Level" : 8
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1615,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -4
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        }, {
+          "DepartureAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "LAS"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -7
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 183,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "I",
+          "Equipment" : {
+            "AirEquipType" : "M80"
+          },
+          "DepartureDateTime" : "2015-03-12T17:15:00",
+          "ArrivalDateTime" : "2015-03-12T18:18:00",
+          "FlightNumber" : 1389,
+          "OnTimePerformance" : {
+            "Level" : 5
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1389,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        } ],
+        "ElapsedTime" : 573
+      }, {
+        "FlightSegment" : [ {
+          "DepartureAirport" : {
+            "LocationCode" : "LAS"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 160,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : "M80"
+          },
+          "DepartureDateTime" : "2015-03-20T06:00:00",
+          "ArrivalDateTime" : "2015-03-20T10:40:00",
+          "FlightNumber" : 1088,
+          "OnTimePerformance" : {
+            "Level" : 9
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1088,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -7
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        }, {
+          "DepartureAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "MIA"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -4
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 159,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "I",
+          "Equipment" : {
+            "AirEquipType" : "32B"
+          },
+          "DepartureDateTime" : "2015-03-20T12:05:00",
+          "ArrivalDateTime" : "2015-03-20T15:44:00",
+          "FlightNumber" : 1462,
+          "OnTimePerformance" : {
+            "Level" : 6
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1462,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        } ],
+        "ElapsedTime" : 404
+      } ]
+    },
+    "DirectionInd" : "Return"
+  },
+  "TPA_Extensions" : {
+    "ValidatingCarrier" : {
+      "Code" : "US"
+    }
+  },
+  "SequenceNumber" : 37,
+  "AirItineraryPricingInfo" : {
+    "PTC_FareBreakdowns" : {
+      "PTC_FareBreakdown" : {
+        "FareBasisCodes" : {
+          "FareBasisCode" : [ {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "MIA",
+            "ArrivalAirportCode" : "DFW",
+            "content" : "OD00ZSL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "DFW",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "LAS",
+            "content" : "OB07ZTL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "LAS",
+            "ArrivalAirportCode" : "DFW",
+            "content" : "OB07ZTL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "DFW",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "MIA",
+            "content" : "OD00ZSL3"
+          } ]
+        },
+        "PassengerTypeQuantity" : {
+          "Quantity" : 1,
+          "Code" : "ADT"
+        },
+        "PassengerFare" : {
+          "FareConstruction" : {
+            "CurrencyCode" : "USD",
+            "DecimalPlaces" : 2,
+            "Amount" : 247.44
+          },
+          "TotalFare" : {
+            "CurrencyCode" : "USD",
+            "Amount" : "311.20"
+          },
+          "Taxes" : {
+            "TotalTax" : {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "Amount" : 63.76
+            },
+            "Tax" : [ {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "US1",
+              "Amount" : 18.56
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "ZP",
+              "Amount" : "16.00"
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "AY",
+              "Amount" : "11.20"
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "XF",
+              "Amount" : "18.00"
+            } ]
+          },
+          "BaseFare" : {
+            "CurrencyCode" : "USD",
+            "Amount" : 247.44
+          },
+          "EquivFare" : {
+            "CurrencyCode" : "USD",
+            "DecimalPlaces" : 2,
+            "Amount" : 247.44
+          }
+        }
+      }
+    },
+    "FareInfos" : {
+      "FareInfo" : [ {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      } ]
+    },
+    "TPA_Extensions" : {
+      "DivideInParty" : {
+        "Indicator" : false
+      }
+    },
+    "ItinTotalFare" : {
+      "FareConstruction" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      },
+      "TotalFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : "311.20"
+      },
+      "Taxes" : {
+        "Tax" : [ {
+          "CurrencyCode" : "USD",
+          "DecimalPlaces" : 2,
+          "TaxCode" : "TOTALTAX",
+          "Amount" : 63.76
+        } ]
+      },
+      "BaseFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      },
+      "EquivFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      }
+    }
+  },
+  "TicketingInfo" : {
+    "TicketType" : "eTicket"
+  }
+}, {
+  "AirItinerary" : {
+    "OriginDestinationOptions" : {
+      "OriginDestinationOption" : [ {
+        "FlightSegment" : [ {
+          "DepartureAirport" : {
+            "LocationCode" : "MIA"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 202,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : "32B"
+          },
+          "DepartureDateTime" : "2015-03-12T11:45:00",
+          "ArrivalDateTime" : "2015-03-12T14:07:00",
+          "FlightNumber" : 1615,
+          "OnTimePerformance" : {
+            "Level" : 8
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1615,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -4
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        }, {
+          "DepartureAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "LAS"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -7
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 179,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : 757
+          },
+          "DepartureDateTime" : "2015-03-12T18:50:00",
+          "ArrivalDateTime" : "2015-03-12T19:49:00",
+          "FlightNumber" : 27,
+          "OnTimePerformance" : {
+            "Level" : 7
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 27,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        } ],
+        "ElapsedTime" : 664
+      }, {
+        "FlightSegment" : [ {
+          "DepartureAirport" : {
+            "LocationCode" : "LAS"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 160,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : "M80"
+          },
+          "DepartureDateTime" : "2015-03-20T07:00:00",
+          "ArrivalDateTime" : "2015-03-20T11:40:00",
+          "FlightNumber" : 1258,
+          "OnTimePerformance" : {
+            "Level" : 9
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1258,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -7
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        }, {
+          "DepartureAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "MIA"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -4
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 167,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "I",
+          "Equipment" : {
+            "AirEquipType" : "32B"
+          },
+          "DepartureDateTime" : "2015-03-20T15:30:00",
+          "ArrivalDateTime" : "2015-03-20T19:17:00",
+          "FlightNumber" : 2266,
+          "OnTimePerformance" : {
+            "Level" : 6
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 2266,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        } ],
+        "ElapsedTime" : 557
+      } ]
+    },
+    "DirectionInd" : "Return"
+  },
+  "TPA_Extensions" : {
+    "ValidatingCarrier" : {
+      "Code" : "US"
+    }
+  },
+  "SequenceNumber" : 34,
+  "AirItineraryPricingInfo" : {
+    "PTC_FareBreakdowns" : {
+      "PTC_FareBreakdown" : {
+        "FareBasisCodes" : {
+          "FareBasisCode" : [ {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "MIA",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "DFW",
+            "content" : "OD00ZSL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "DFW",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "LAS",
+            "content" : "OB07ZTL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "LAS",
+            "ArrivalAirportCode" : "DFW",
+            "content" : "OB07ZTL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "DFW",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "MIA",
+            "content" : "OD00ZSL3"
+          } ]
+        },
+        "PassengerTypeQuantity" : {
+          "Quantity" : 1,
+          "Code" : "ADT"
+        },
+        "PassengerFare" : {
+          "FareConstruction" : {
+            "CurrencyCode" : "USD",
+            "DecimalPlaces" : 2,
+            "Amount" : 247.44
+          },
+          "TotalFare" : {
+            "CurrencyCode" : "USD",
+            "Amount" : "311.20"
+          },
+          "Taxes" : {
+            "TotalTax" : {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "Amount" : 63.76
+            },
+            "Tax" : [ {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "US1",
+              "Amount" : 18.56
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "ZP",
+              "Amount" : "16.00"
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "AY",
+              "Amount" : "11.20"
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "XF",
+              "Amount" : "18.00"
+            } ]
+          },
+          "BaseFare" : {
+            "CurrencyCode" : "USD",
+            "Amount" : 247.44
+          },
+          "EquivFare" : {
+            "CurrencyCode" : "USD",
+            "DecimalPlaces" : 2,
+            "Amount" : 247.44
+          }
+        }
+      }
+    },
+    "FareInfos" : {
+      "FareInfo" : [ {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      } ]
+    },
+    "TPA_Extensions" : {
+      "DivideInParty" : {
+        "Indicator" : false
+      }
+    },
+    "ItinTotalFare" : {
+      "FareConstruction" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      },
+      "TotalFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : "311.20"
+      },
+      "Taxes" : {
+        "Tax" : [ {
+          "CurrencyCode" : "USD",
+          "DecimalPlaces" : 2,
+          "TaxCode" : "TOTALTAX",
+          "Amount" : 63.76
+        } ]
+      },
+      "BaseFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      },
+      "EquivFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      }
+    }
+  },
+  "TicketingInfo" : {
+    "TicketType" : "eTicket"
+  }
+}, {
+  "AirItinerary" : {
+    "OriginDestinationOptions" : {
+      "OriginDestinationOption" : [ {
+        "FlightSegment" : [ {
+          "DepartureAirport" : {
+            "LocationCode" : "MIA"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 202,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : "32B"
+          },
+          "DepartureDateTime" : "2015-03-12T11:45:00",
+          "ArrivalDateTime" : "2015-03-12T14:07:00",
+          "FlightNumber" : 1615,
+          "OnTimePerformance" : {
+            "Level" : 8
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1615,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -4
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        }, {
+          "DepartureAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "LAS"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -7
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 183,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "I",
+          "Equipment" : {
+            "AirEquipType" : "M80"
+          },
+          "DepartureDateTime" : "2015-03-12T17:15:00",
+          "ArrivalDateTime" : "2015-03-12T18:18:00",
+          "FlightNumber" : 1389,
+          "OnTimePerformance" : {
+            "Level" : 5
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1389,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        } ],
+        "ElapsedTime" : 573
+      }, {
+        "FlightSegment" : [ {
+          "DepartureAirport" : {
+            "LocationCode" : "LAS"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 160,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "O",
+          "Equipment" : {
+            "AirEquipType" : "M80"
+          },
+          "DepartureDateTime" : "2015-03-20T07:00:00",
+          "ArrivalDateTime" : "2015-03-20T11:40:00",
+          "FlightNumber" : 1258,
+          "OnTimePerformance" : {
+            "Level" : 9
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1258,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -7
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        }, {
+          "DepartureAirport" : {
+            "LocationCode" : "DFW"
+          },
+          "ArrivalAirport" : {
+            "LocationCode" : "MIA"
+          },
+          "MarketingAirline" : {
+            "Code" : "US"
+          },
+          "ArrivalTimeZone" : {
+            "GMTOffset" : -4
+          },
+          "TPA_Extensions" : {
+            "eTicket" : {
+              "Ind" : true
+            }
+          },
+          "StopQuantity" : 0,
+          "ElapsedTime" : 162,
+          "ResBookDesigCode" : "O",
+          "MarriageGrp" : "I",
+          "Equipment" : {
+            "AirEquipType" : 757
+          },
+          "DepartureDateTime" : "2015-03-20T13:50:00",
+          "ArrivalDateTime" : "2015-03-20T17:32:00",
+          "FlightNumber" : 1412,
+          "OnTimePerformance" : {
+            "Level" : 4
+          },
+          "OperatingAirline" : {
+            "FlightNumber" : 1412,
+            "Code" : "AA"
+          },
+          "DepartureTimeZone" : {
+            "GMTOffset" : -5
+          },
+          "DisclosureAirline" : {
+            "Code" : "AA"
+          }
+        } ],
+        "ElapsedTime" : 452
+      } ]
+    },
+    "DirectionInd" : "Return"
+  },
+  "TPA_Extensions" : {
+    "ValidatingCarrier" : {
+      "Code" : "US"
+    }
+  },
+  "SequenceNumber" : 36,
+  "AirItineraryPricingInfo" : {
+    "PTC_FareBreakdowns" : {
+      "PTC_FareBreakdown" : {
+        "FareBasisCodes" : {
+          "FareBasisCode" : [ {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "MIA",
+            "ArrivalAirportCode" : "DFW",
+            "content" : "OD00ZSL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "DFW",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "LAS",
+            "content" : "OB07ZTL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "LAS",
+            "ArrivalAirportCode" : "DFW",
+            "content" : "OB07ZTL3"
+          }, {
+            "BookingCode" : "O",
+            "DepartureAirportCode" : "DFW",
+            "AvailabilityBreak" : true,
+            "ArrivalAirportCode" : "MIA",
+            "content" : "OD00ZSL3"
+          } ]
+        },
+        "PassengerTypeQuantity" : {
+          "Quantity" : 1,
+          "Code" : "ADT"
+        },
+        "PassengerFare" : {
+          "FareConstruction" : {
+            "CurrencyCode" : "USD",
+            "DecimalPlaces" : 2,
+            "Amount" : 247.44
+          },
+          "TotalFare" : {
+            "CurrencyCode" : "USD",
+            "Amount" : "311.20"
+          },
+          "Taxes" : {
+            "TotalTax" : {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "Amount" : 63.76
+            },
+            "Tax" : [ {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "US1",
+              "Amount" : 18.56
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "ZP",
+              "Amount" : "16.00"
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "AY",
+              "Amount" : "11.20"
+            }, {
+              "CurrencyCode" : "USD",
+              "DecimalPlaces" : 2,
+              "TaxCode" : "XF",
+              "Amount" : "18.00"
+            } ]
+          },
+          "BaseFare" : {
+            "CurrencyCode" : "USD",
+            "Amount" : 247.44
+          },
+          "EquivFare" : {
+            "CurrencyCode" : "USD",
+            "DecimalPlaces" : 2,
+            "Amount" : 247.44
+          }
+        }
+      }
+    },
+    "FareInfos" : {
+      "FareInfo" : [ {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      }, {
+        "TPA_Extensions" : {
+          "Cabin" : {
+            "Cabin" : "Y"
+          },
+          "SeatsRemaining" : {
+            "BelowMin" : false,
+            "Number" : 4
+          }
+        },
+        "FareReference" : "O"
+      } ]
+    },
+    "TPA_Extensions" : {
+      "DivideInParty" : {
+        "Indicator" : false
+      }
+    },
+    "ItinTotalFare" : {
+      "FareConstruction" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      },
+      "TotalFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : "311.20"
+      },
+      "Taxes" : {
+        "Tax" : [ {
+          "CurrencyCode" : "USD",
+          "DecimalPlaces" : 2,
+          "TaxCode" : "TOTALTAX",
+          "Amount" : 63.76
+        } ]
+      },
+      "BaseFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      },
+      "EquivFare" : {
+        "CurrencyCode" : "USD",
+        "DecimalPlaces" : 2,
+        "Amount" : 247.44
+      }
+    }
+  },
+  "TicketingInfo" : {
+    "TicketType" : "eTicket"
+  }
+} ]
