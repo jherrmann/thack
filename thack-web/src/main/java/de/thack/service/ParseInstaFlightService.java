@@ -21,9 +21,26 @@ public class ParseInstaFlightService {
 		JsonNode path = readTree.path("PricedItineraries");
 		for (Iterator<JsonNode> iterator = path.getElements(); iterator
 				.hasNext();) {
-			JsonNode currenetNode = iterator.next();
+			JsonNode itinerary = iterator.next();
+			
+			Flight flight = new Flight();
+			JsonNode totalFare = itinerary.path("AirItineraryPricingInfo")
+			.path("PTC_FareBreakdowns")
+			.path("PTC_FareBreakdown")
+			.path("PassengerFare")
+			.path("TotalFare");
+			flight.setPrice(Double.valueOf(totalFare.path("Amount").getTextValue()));
+			flight.setCurrency(totalFare.path("CurrencyCode").getTextValue());
+			
+//			PricedItineraries AirItineraryPricingInfo": {
+//            "PTC_FareBreakdowns": {
+//                "PTC_FareBreakdown": {
+//				PassengerFare": {
+//				                        "TotalFare": {
+//				                            "CurrencyCode": "USD",
+//				                            "Amount": "311.20"
 
-			JsonNode segmentNodes = currenetNode.path("AirItinerary")
+			JsonNode segmentNodes = itinerary.path("AirItinerary")
 					.path("OriginDestinationOptions")
 					.path("OriginDestinationOption").getElements().next()
 					.path("FlightSegment");
@@ -44,10 +61,10 @@ public class ParseInstaFlightService {
 						.path("LocationCode").getTextValue());
 				segment.setArrivalDateTime(DateTime.parse(segmentNode.path(
 						"ArrivalDateTime").getTextValue()));
-				System.out.println("--" + segment.toString());
 
+				flight.addLeg(segment);
 			}
-
+			flight.printOut();
 		}
 		return null;
 	}

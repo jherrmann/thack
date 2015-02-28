@@ -1,11 +1,12 @@
 package de.thack.domainobjects;
 
+import java.util.LinkedList;
 import java.util.List;
 
 
 public class Flight {
 
-	private List<FlightSegment> routing;
+	private List<FlightSegment> routing = new LinkedList<FlightSegment>();
 	private double price;
 	private String currency;
 	
@@ -31,5 +32,11 @@ public class Flight {
 		this.currency = currency;
 	}
 	
+	public void printOut() {
+		System.out.println(String.valueOf(price) + " " + currency);
+		for (FlightSegment flightSegment : routing) {
+			System.out.println(flightSegment.toString());
+		}
+	}
 	
 }
