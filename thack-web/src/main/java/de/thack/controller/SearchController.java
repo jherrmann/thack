@@ -46,7 +46,7 @@ public class SearchController {
 		for (Itinerary itinerary : optimizedTravel.getItineraries()) {
 			logger.info(itinerary.getTotalPrice() + " routing "
 					+ optimizedTravel.getStartPlace() + " to "
-					+ itinerary.getTopDesintion() + " to final "
+					+ itinerary.getTopDestination() + " to final "
 					+ optimizedTravel.getStopPlace());
 
 			itinerary.getFromOriginToTop().printOut();

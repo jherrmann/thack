@@ -9,6 +9,7 @@ import javax.annotation.Generated;
 import org.codehaus.jackson.annotate.JsonAnyGetter;
 import org.codehaus.jackson.annotate.JsonAnySetter;
 import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.codehaus.jackson.annotate.JsonPropertyOrder;
 
@@ -21,7 +22,6 @@ import org.codehaus.jackson.annotate.JsonPropertyOrder;
     "date",
     "status",
     "query",
-    "availableLanguages",
     "exchange",
     "totalCount",
     "limit",
@@ -43,7 +43,8 @@ public class Metadata {
     private String status;
     @JsonProperty("query")
     private String query;
-    @JsonProperty("availableLanguages")
+//    @JsonProperty("availableLanguages")
+    @JsonIgnore
     private AvailableLanguages availableLanguages;
     @JsonProperty("exchange")
     private Exchange exchange;
@@ -196,25 +197,25 @@ public class Metadata {
         this.query = query;
     }
 
-    /**
-     * 
-     * @return
-     *     The availableLanguages
-     */
-    @JsonProperty("availableLanguages")
-    public AvailableLanguages getAvailableLanguages() {
-        return availableLanguages;
-    }
-
-    /**
-     * 
-     * @param availableLanguages
-     *     The availableLanguages
-     */
-    @JsonProperty("availableLanguages")
-    public void setAvailableLanguages(AvailableLanguages availableLanguages) {
-        this.availableLanguages = availableLanguages;
-    }
+//    /**
+//     * 
+//     * @return
+//     *     The availableLanguages
+//     */
+//    @JsonProperty("availableLanguages")
+//    public AvailableLanguages getAvailableLanguages() {
+//        return availableLanguages;
+//    }
+//
+//    /**
+//     * 
+//     * @param availableLanguages
+//     *     The availableLanguages
+//     */
+//    @JsonProperty("availableLanguages")
+//    public void setAvailableLanguages(AvailableLanguages availableLanguages) {
+//        this.availableLanguages = availableLanguages;
+//    }
 
     /**
      * 

@@ -9,6 +9,7 @@ import javax.annotation.Generated;
 import org.codehaus.jackson.annotate.JsonAnyGetter;
 import org.codehaus.jackson.annotate.JsonAnySetter;
 import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.codehaus.jackson.annotate.JsonPropertyOrder;
 
@@ -19,6 +20,7 @@ import org.codehaus.jackson.annotate.JsonPropertyOrder;
     "2",
     "4"
 })
+@JsonIgnoreProperties(ignoreUnknown=true)
 public class AvailableLanguages {
 
     @JsonProperty("0")

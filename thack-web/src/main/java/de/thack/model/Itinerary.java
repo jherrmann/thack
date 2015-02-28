@@ -1,7 +1,10 @@
 package de.thack.model;
 
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
+import de.thack.api.getyourguide.model.Tour;
 import de.thack.api.sabre.model.Flight;
 
 public class Itinerary implements Comparator<Itinerary> {
@@ -10,14 +13,24 @@ public class Itinerary implements Comparator<Itinerary> {
 	
 	private Flight fromTopToDestination;
 
-	private String topDesintion;
+	private String topDestination;
+	
+	private List<Tour> tours = new ArrayList<>();
 
-	public String getTopDesintion() {
-		return topDesintion;
+	public List<Tour> getTours() {
+		return tours;
 	}
 
-	public void setTopDesintion(String topDesintion) {
-		this.topDesintion = topDesintion;
+	public void setTours(List<Tour> tours) {
+		this.tours = tours;
+	}
+
+	public String getTopDestination() {
+		return topDestination;
+	}
+
+	public void setTopDestination(String topDesintion) {
+		this.topDestination = topDesintion;
 	}
 
 	public Itinerary(Flight fromOriginToTop, Flight fromTopToDesFlight) {
@@ -43,9 +56,18 @@ public class Itinerary implements Comparator<Itinerary> {
 	public void setFromTopToDestination(Flight fromTopToDestination) {
 		this.fromTopToDestination = fromTopToDestination;
 	}
+	
+	public void addTour(Tour tour){
+		this.tours.add(tour);
+	}
 
 	public double getTotalPrice() {
-		return fromOriginToTop.getPrice() + fromTopToDestination.getPrice();
+		double flightPrice = fromOriginToTop.getPrice() + fromTopToDestination.getPrice();
+		double tourPrice = 0;
+		for (Tour tour : tours) {
+			tourPrice += Double.valueOf(tour.getPrice().getValues().getAmount().toString());
+		}
+		return flightPrice + tourPrice;
 	}
 
 	@Override
