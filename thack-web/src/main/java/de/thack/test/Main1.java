@@ -47,7 +47,7 @@ public class Main1 {
 //			}
 
 			// prase output
-			ParseInstaFlightService.parseInstaFlight(output);
+			ParseInstaFlightService.parseInstaFlight(output, 99);
 			
 			// parse output end
 
