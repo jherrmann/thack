@@ -2,6 +2,7 @@
 package de.thack.api.getyourguide.model;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Generated;
@@ -74,6 +75,14 @@ public class TourResponse {
     @JsonAnySetter
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
+    }
+    
+    public void printOut() {
+    	List<Tour> tours = this.data.getTours();
+    	System.out.println("TourReponse");
+    	for (Tour tour : tours) {
+			System.out.println(tour.getTitle() + " " + tour.getPrice().getValues().getAmount()+"$ "+this.getMetadata().getDate());
+		}
     }
 
 }

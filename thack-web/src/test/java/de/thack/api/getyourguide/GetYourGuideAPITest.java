@@ -20,7 +20,7 @@ public class GetYourGuideAPITest {
 
 		// Tests
 		assertEquals("Should have result", false, tours.getData().getTours().isEmpty());
-
+		tours.printOut();
 	}
 	
 	@Test
