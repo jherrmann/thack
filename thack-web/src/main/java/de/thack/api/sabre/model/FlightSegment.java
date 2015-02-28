@@ -9,6 +9,7 @@ public class FlightSegment {
 	private DateTime departureDateTime;
 	private DateTime arrivalDateTime;
 	private int flightNumber;
+	private String AirlineCode;
 	
 	public String getDepatureAirport() {
 		return depatureAirport;
@@ -42,8 +43,14 @@ public class FlightSegment {
 		this.flightNumber = flightNumber;
 	}
 	
+	public String getAirlineCode() {
+		return AirlineCode;
+	}
+	public void setAirlineCode(String airlineCode) {
+		AirlineCode = airlineCode;
+	}
 	@Override
 	public String toString() {
-		return flightNumber +": "+depatureAirport +" "+arrivalAirport +" "+departureDateTime+ "+"+arrivalDateTime;
+		return AirlineCode + " "+ flightNumber +": "+depatureAirport +" "+arrivalAirport +" "+departureDateTime+ "+"+arrivalDateTime;
 	}
 }

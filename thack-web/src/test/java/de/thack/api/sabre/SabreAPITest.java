@@ -18,7 +18,7 @@ public class SabreAPITest {
 
 		// MyClass is tested
 		SabreAPI sabreAPI = new SabreAPI();
-		List<Flight> searchFlights = sabreAPI.searchFlights("MIA", "LAS",
+		List<Flight> searchFlights = sabreAPI.searchFlights("MIA", "NYC",
 				"2015-03-12", "2015-03-20");
 
 		// Tests

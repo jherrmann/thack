@@ -6,18 +6,28 @@ import java.util.List;
 
 public class Flight {
 
-	private List<FlightSegment> routing = new LinkedList<FlightSegment>();
+	private List<FlightSegment> routingTo = new LinkedList<FlightSegment>();
+	private List<FlightSegment> routingReturn = new LinkedList<FlightSegment>();
 	private double price;
 	private String currency;
 	
-	public List<FlightSegment> getRouting() {
-		return routing;
+	public void addSegmentTo(FlightSegment segment) {
+		routingTo.add(segment);
 	}
-	public void setRouting(List<FlightSegment> routing) {
-		this.routing = routing;
+	public void addSegmentReturn(FlightSegment segment) {
+		routingReturn.add(segment);
 	}
-	public void addLeg(FlightSegment segment) {
-		routing.add(segment);
+	public List<FlightSegment> getRoutingTo() {
+		return routingTo;
+	}
+	public void setRoutingTo(List<FlightSegment> routingTo) {
+		this.routingTo = routingTo;
+	}
+	public List<FlightSegment> getRoutingReturn() {
+		return routingReturn;
+	}
+	public void setRoutingReturn(List<FlightSegment> routingReturn) {
+		this.routingReturn = routingReturn;
 	}
 	public double getPrice() {
 		return price;
@@ -34,9 +44,12 @@ public class Flight {
 	
 	public void printOut() {
 		System.out.println(String.valueOf(price) + " " + currency);
-		for (FlightSegment flightSegment : routing) {
+		for (FlightSegment flightSegment : routingTo) {
 			System.out.println(flightSegment.toString());
 		}
+	for (FlightSegment flightSegment : routingReturn) {
+		System.out.println(flightSegment.toString());
+	}
 	}
 	
 }

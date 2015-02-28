@@ -5,11 +5,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 
+import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.JsonProcessingException;
 import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
 
 import de.thack.api.sabre.model.Flight;
 import de.thack.api.sabre.model.TopDestinationResponse;
@@ -54,6 +57,11 @@ public class SabreAPI {
 		System.out.println("Output from Server .... \n");
 		output = br.readLine();
 
+//		ObjectMapper mapper = new ObjectMapper();
+//		JsonNode readTree = mapper.readTree(output);
+////		JsonNode path = readTree.path("PricedItineraries");
+//		 System.out.println(mapper.defaultPrettyPrintingWriter().writeValueAsString(readTree));
+		
 		// prase output
 		List<Flight> parseInstaFlight = ParseInstaFlightService.parseInstaFlight(output);
 		
