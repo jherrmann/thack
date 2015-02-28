@@ -14,7 +14,7 @@ import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.hibernate.validator.internal.util.privilegedactions.GetClassLoader;
 
-import de.thack.domainobjects.Flight;
+import de.thack.api.sabre.model.Flight;
 import de.thack.service.ParseInstaFlightService;
 
 public class Main2 {
