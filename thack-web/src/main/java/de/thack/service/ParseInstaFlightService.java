@@ -1,7 +1,9 @@
 package de.thack.service;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.JsonProcessingException;
@@ -13,10 +15,12 @@ import de.thack.api.sabre.model.FlightSegment;
 
 public class ParseInstaFlightService {
 
-	public static Flight parseInstaFlight(String json)
+	public static List<Flight> parseInstaFlight(String json)
 			throws JsonProcessingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
 
+		ArrayList<Flight> flights = new ArrayList<>();
+		
 		JsonNode readTree = mapper.readTree(json);
 		JsonNode path = readTree.path("PricedItineraries");
 		for (Iterator<JsonNode> iterator = path.getElements(); iterator
@@ -32,14 +36,6 @@ public class ParseInstaFlightService {
 			flight.setPrice(Double.valueOf(totalFare.path("Amount").getTextValue()));
 			flight.setCurrency(totalFare.path("CurrencyCode").getTextValue());
 			
-//			PricedItineraries AirItineraryPricingInfo": {
-//            "PTC_FareBreakdowns": {
-//                "PTC_FareBreakdown": {
-//				PassengerFare": {
-//				                        "TotalFare": {
-//				                            "CurrencyCode": "USD",
-//				                            "Amount": "311.20"
-
 			JsonNode segmentNodes = itinerary.path("AirItinerary")
 					.path("OriginDestinationOptions")
 					.path("OriginDestinationOption").getElements().next()
@@ -64,9 +60,10 @@ public class ParseInstaFlightService {
 
 				flight.addLeg(segment);
 			}
-			flight.printOut();
+//			flight.printOut();
+			flights.add(flight);
 		}
-		return null;
+		return flights;
 	}
 
 }
