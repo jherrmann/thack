@@ -16,80 +16,129 @@
     limitations under the License.
 -->
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:ui="http://java.sun.com/jsf/facelets"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:h="http://java.sun.com/jsf/html"
-    template="/WEB-INF/templates/default.xhtml">
-    <ui:define name="content">
-        <h1>Welcome to JBoss!</h1>
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml">
+	<ui:define name="content">
 
-        <div>
-            <p>You have successfully deployed a Java EE 6 Enterprise
-                Application.</p>
-        </div>
+		<!-- Marketing messaging and featurettes
+    ================================================== -->
+		<!-- Wrap the rest of the page in another container to center all the content. -->
 
-        <h:form id="reg">
-            <h2>Member Registration</h2>
-            <p>Enforces annotation-based constraints defined on the
-                model class.</p>
-            <h:panelGrid columns="3" columnClasses="titleCell">
-                <h:outputLabel for="name" value="Name:" />
-                <h:inputText id="name" value="#{newMember.name}" />
-                <h:message for="name" errorClass="invalid" />
+		<div class="container marketing">
 
-                <h:outputLabel for="email" value="Email:" />
-                <h:inputText id="email" value="#{newMember.email}" />
-                <h:message for="email" errorClass="invalid" />
+			<!-- Three columns of text below the carousel -->
+			<div class="row">
+				<div class="col-lg-4">
+					<img class="img-circle"
+						src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+						alt="Generic placeholder image"
+						style="width: 140px; height: 140px;"></img>
+					<h2>Heading</h2>
+					<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis
+						euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
+						Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+						Praesent commodo cursus magna.</p>
+					<p>
+						<a class="btn btn-default" href="#" role="button">View details
+							</a>
+					</p>
+				</div>
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<img class="img-circle"
+						src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+						alt="Generic placeholder image"
+						style="width: 140px; height: 140px;"></img>
+					<h2>Heading</h2>
+					<p>Duis mollis, est non commodo luctus, nisi erat porttitor
+						ligula, eget lacinia odio sem nec elit. Cras mattis consectetur
+						purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo,
+						tortor mauris condimentum nibh.</p>
+					<p>
+						<a class="btn btn-default" href="#" role="button">View details
+							</a>
+					</p>
+				</div>
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<img class="img-circle"
+						src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+						alt="Generic placeholder image"
+						style="width: 140px; height: 140px;"></img>
+					<h2>Heading</h2>
+					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis
+						in, egestas eget quam. Vestibulum id ligula porta felis euismod
+						semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+						condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<p>
+						<a class="btn btn-default" href="#" role="button">View details
+							</a>
+					</p>
+				</div>
+				<!-- /.col-lg-4 -->
+			</div>
+			<!-- /.row -->
 
-                <h:outputLabel for="phoneNumber" value="Phone #:" />
-                <h:inputText id="phoneNumber"
-                    value="#{newMember.phoneNumber}" />
-                <h:message for="phoneNumber" errorClass="invalid" />
-            </h:panelGrid>
 
-            <p>
-                <h:panelGrid columns="2">
-                    <h:commandButton id="register"
-                        action="#{memberController.register}"
-                        value="Register" styleClass="register" />
-                    <h:messages styleClass="messages"
-                        errorClass="invalid" infoClass="valid"
-                        warnClass="warning" globalOnly="true" />
-                </h:panelGrid>
-            </p>
-        </h:form>
-        <h2>Members</h2>
-        <h:panelGroup rendered="#{empty members}">
-            <em>No registered members.</em>
-        </h:panelGroup>
-        <h:dataTable var="_member" value="#{members}"
-            rendered="#{not empty members}"
-            styleClass="simpletablestyle">
-            <h:column>
-                <f:facet name="header">Id</f:facet>
-                #{_member.id}
-            </h:column>
-            <h:column>
-                <f:facet name="header">Name</f:facet>
-                #{_member.name}
-            </h:column>
-            <h:column>
-                <f:facet name="header">Email</f:facet>
-                #{_member.email}
-            </h:column>
-            <h:column>
-                <f:facet name="header">Phone #</f:facet>
-                #{_member.phoneNumber}
-            </h:column>
-            <h:column>
-                <f:facet name="header">REST URL</f:facet>
-                <a
-                    href="#{request.contextPath}/rest/members/#{_member.id}">/rest/members/#{_member.id}</a>
-            </h:column>
-            <f:facet name="footer">
-            REST URL for all members: <a
-                    href="#{request.contextPath}/rest/members">/rest/members</a>
-            </f:facet>
-        </h:dataTable>
-    </ui:define>
+			<!-- START THE FEATURETTES -->
+
+			<hr class="featurette-divider"></hr>
+
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">
+						First featurette heading. <span class="text-muted">It'll
+							blow your mind.</span>
+					</h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper.
+						Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+						Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive"
+						data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
+				</div>
+			</div>
+
+			<hr class="featurette-divider"></hr>
+
+			<div class="row featurette">
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive"
+						data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
+				</div>
+				<div class="col-md-7">
+					<h2 class="featurette-heading">
+						Oh yeah, it's that good. <span class="text-muted">See for
+							yourself.</span>
+					</h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper.
+						Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+						Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+			</div>
+
+			<hr class="featurette-divider"></hr>
+
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">
+						And lastly, this one. <span class="text-muted">Checkmate.</span>
+					</h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor
+						fringilla. Vestibulum id ligula porta felis euismod semper.
+						Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+						Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive"
+						data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
+				</div>
+			</div>
+		</div>
+	</ui:define>
 </ui:composition>
