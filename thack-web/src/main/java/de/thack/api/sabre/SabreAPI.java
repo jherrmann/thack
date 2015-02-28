@@ -46,9 +46,10 @@ public class SabreAPI {
 		conn.setRequestProperty("Authorization", AUTHORIZATION_VALUE);
 		
 		if (conn.getResponseCode() != 200) {
-			throw new RuntimeException("Failed : HTTP error code : "
-					+ conn.getResponseCode());
-		}
+			System.err.println("Failed : HTTP error code : "
+					+ conn.getResponseCode() + conn.getResponseMessage());
+			return null;
+		} 
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(
 				(conn.getInputStream())));

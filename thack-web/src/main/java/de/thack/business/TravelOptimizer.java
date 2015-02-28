@@ -33,23 +33,41 @@ public class TravelOptimizer {
 				.getStartPlace(), travel.getStopPlace(), travel.getStartTime()
 				.toString(DateTimeFormat.forPattern("YYYY-MM-dd")), travel.getStartTime().plusDays(travel.getDurationAtAll())
 				.toString(DateTimeFormat.forPattern("YYYY-MM-dd")));
-		
-		for (Flight flight : foundFlights) {
-			flight.printOut();
+		if(foundFlights!=null) {
+			for (Flight flight : foundFlights) {
+				flight.printOut();
+			}
 		}
-		
+			
 		// find top destinations
 		TopDestinationResponse topDestination = sabreAPI.findTopDestination(travel.getStartPlace());
 		List<Destination> destinations = topDestination.getDestinations();
 		// get top 5 Targets
 		int i = 0;
 		for (Destination destination : destinations) {
-			if(i==5) {
+			if(i==3) {
 				break;
 			}
 			System.out.println("Top Dest "+i+" "+destination.getDestination().getDestinationLocation());
-//			// find flights to top 5
-			List<Flight> foundTopFlights = sabreAPI.searchFlights(
+			// find flights from origin to top 5
+			List<Flight> fromOriginToTopFlights = sabreAPI.searchFlights(
+					travel.getStartPlace(),
+					destination.getDestination().getDestinationLocation(),
+					travel.getStartTime()
+							.plusDays(
+									travel.getDurationAtAll()
+											- travel.getDurationAtStop())
+							.toString(DateTimeFormat.forPattern("YYYY-MM-dd")),
+					travel.getStartTime().plusDays(travel.getDurationAtAll())
+							.toString(DateTimeFormat.forPattern("YYYY-MM-dd")));
+			if(fromOriginToTopFlights!=null) {
+				for (Flight flight : fromOriginToTopFlights) {
+					flight.printOut();
+				}
+			}
+			
+//			// find flights from top 5 to destination
+			List<Flight> fromTopToDestinationFlights = sabreAPI.searchFlights(
 					destination.getDestination().getDestinationLocation(),
 					travel.getStopPlace(),
 					travel.getStartTime()
@@ -59,8 +77,10 @@ public class TravelOptimizer {
 							.toString(DateTimeFormat.forPattern("YYYY-MM-dd")),
 					travel.getStartTime().plusDays(travel.getDurationAtAll())
 							.toString(DateTimeFormat.forPattern("YYYY-MM-dd")));
-			for (Flight flight : foundTopFlights) {
-				flight.printOut();
+			if(fromTopToDestinationFlights!=null) {
+				for (Flight flight : fromTopToDestinationFlights) {
+					flight.printOut();
+				}
 			}
 			i++;
 		}
