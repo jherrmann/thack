@@ -15,7 +15,7 @@ import de.thack.api.sabre.model.FlightSegment;
 
 public class ParseInstaFlightService {
 
-	public static List<Flight> parseInstaFlight(String json)
+	public static List<Flight> parseInstaFlight(String json, int numberReturn)
 			throws JsonProcessingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
 
@@ -23,9 +23,14 @@ public class ParseInstaFlightService {
 		
 		JsonNode readTree = mapper.readTree(json);
 		JsonNode path = readTree.path("PricedItineraries");
+		int flightCounter = 0;
 		for (Iterator<JsonNode> iterator = path.getElements(); iterator
 				.hasNext();) {
 			JsonNode itinerary = iterator.next();
+			
+			if (flightCounter >= numberReturn) {
+				break;
+			}
 			
 			Flight flight = new Flight();
 			JsonNode totalFare = itinerary.path("AirItineraryPricingInfo")
@@ -73,7 +78,8 @@ public class ParseInstaFlightService {
 				flights.add(flight);
 				i++;
 			}
-			
+		
+			flightCounter++;
 		}
 		return flights;
 	}

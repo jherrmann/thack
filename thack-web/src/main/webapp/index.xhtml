@@ -37,7 +37,7 @@
 
 							<h:form id="searchForm" styleClass="form-horizontal">
 								<div class="form-group">
-									<label for="start_place" class="col-sm-4 control-label">Start</label>
+									<label for="start_place" class="col-sm-4 control-label">Origin</label>
 									<div class="col-sm-8">
 										<h:inputText id="start_place" value="#{travel.startPlace}" />
 									</div>
@@ -49,22 +49,15 @@
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="start_place" class="col-sm-4 control-label">From</label>
+									<label for="start_place" class="col-sm-4 control-label">Departing</label>
 									<div class="col-sm-8">
 										<h:inputText id="start_time" value="#{travel.startTime}"
 											converter="localDateConverter" />
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="start_place" class="col-sm-4 control-label">To</label>
-									<div class="col-sm-8">
-										<h:inputText id="stop_time" value="#{travel.stopTime}"
-											converter="localDateConverter" />
-									</div>
-								</div>
-								<div class="form-group">
 									<label for="stop_place" class="col-sm-4 control-label">Duration
-										of Stay</label>
+										at Destination</label>
 									<div class="col-sm-8">
 										<h:inputText id="stop_duration"
 											value="#{travel.durationAtStop}" />

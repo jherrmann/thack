@@ -12,6 +12,7 @@ import javax.inject.Named;
 import org.codehaus.jackson.JsonProcessingException;
 
 import de.thack.business.TravelOptimizer;
+import de.thack.model.Itinerary;
 import de.thack.model.Travel;
 
 @Named
@@ -23,7 +24,7 @@ public class SearchController {
 
 	@Inject
 	private TravelOptimizer travelOptimizer;
-	
+
 	@Inject
 	private Logger logger;
 
@@ -37,8 +38,22 @@ public class SearchController {
 		logger.info(travel.getStartPlace());
 		logger.info(travel.getStartTime().toString());
 		logger.info("optimizing the shit out of this stuff");
-		travelOptimizer.optimizer(travel);
-		
+		Travel optimizedTravel = travelOptimizer.optimizer(travel);
+
+		logger.info(optimizedTravel.getItineraries().size() + "");
+
+		logger.info("-------------------------------------------");
+		for (Itinerary itinerary : optimizedTravel.getItineraries()) {
+			logger.info(itinerary.getTotalPrice() + " routing "
+					+ optimizedTravel.getStartPlace() + " to "
+					+ itinerary.getTopDesintion() + " to final "
+					+ optimizedTravel.getStopPlace());
+
+			itinerary.getFromOriginToTop().printOut();
+			itinerary.getFromTopToDestination().printOut();
+		}
+		logger.info("-------------------------------------------");
+
 	}
 
 	public Travel getTravel() {

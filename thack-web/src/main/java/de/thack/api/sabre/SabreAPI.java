@@ -64,7 +64,7 @@ public class SabreAPI {
 //		 System.out.println(mapper.defaultPrettyPrintingWriter().writeValueAsString(readTree));
 		
 		// prase output
-		List<Flight> parseInstaFlight = ParseInstaFlightService.parseInstaFlight(output);
+		List<Flight> parseInstaFlight = ParseInstaFlightService.parseInstaFlight(output, 1);
 		
 		// parse output end
 

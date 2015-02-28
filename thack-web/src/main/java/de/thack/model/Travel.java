@@ -1,8 +1,11 @@
 package de.thack.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.joda.time.DateTime;
 
-public class Travel {
+public class Travel  {
 
 	private String startPlace;
 
@@ -10,13 +13,21 @@ public class Travel {
 
 	private DateTime startTime;
 
-	private DateTime stopTime;
-
 	private Integer durationAtStop;
 
 	private Integer durationAtAll;
 
 	private Double budget;
+
+	private List<Itinerary> itineraries = new ArrayList<Itinerary>();
+
+	public List<Itinerary> getItineraries() {
+		return itineraries;
+	}
+
+	public void setItineraries(List<Itinerary> itineraries) {
+		this.itineraries = itineraries;
+	}
 
 	public String getStartPlace() {
 		return startPlace;
@@ -42,14 +53,6 @@ public class Travel {
 		this.startTime = startTime;
 	}
 
-	public DateTime getStopTime() {
-		return stopTime;
-	}
-
-	public void setStopTime(DateTime stopTime) {
-		this.stopTime = stopTime;
-	}
-
 	public Integer getDurationAtStop() {
 		return durationAtStop;
 	}
@@ -73,5 +76,11 @@ public class Travel {
 	public void setBudget(Double budget) {
 		this.budget = budget;
 	}
+
+	public void addItinerary(Itinerary itinerary) {
+		itineraries.add(itinerary);
+	}
+
+	
 
 }
