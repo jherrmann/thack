@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 
 import de.thack.api.sabre.model.Flight;
 
@@ -65,6 +67,10 @@ public class Travel implements Serializable {
 
 	public DateTime getStartTime() {
 		return startTime;
+	}
+
+	public String getStartTimeString() {
+		return DateTimeFormat.forPattern("dd-MM-yyyy").print(getStartTime());
 	}
 
 	public void setStartTime(DateTime startTime) {

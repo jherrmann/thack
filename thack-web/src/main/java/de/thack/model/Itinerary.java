@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+import org.joda.time.DateTime;
+
 import de.thack.api.getyourguide.model.Tour;
 import de.thack.api.sabre.model.Flight;
 
@@ -20,7 +22,7 @@ public class Itinerary implements Comparator<Itinerary> {
 	public List<Tour> getTours() {
 		return tours;
 	}
-
+	
 	public void setTours(List<Tour> tours) {
 		this.tours = tours;
 	}

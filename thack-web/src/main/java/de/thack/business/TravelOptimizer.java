@@ -24,7 +24,7 @@ import de.thack.model.Travel;
 /**
  * @author j2ee
  */
-public class TravelOptimizer implements Serializable{
+public class TravelOptimizer implements Serializable {
 
 	/**
 	 * 
@@ -33,7 +33,7 @@ public class TravelOptimizer implements Serializable{
 
 	@Inject
 	SabreAPI sabreAPI;
-	
+
 	@Inject
 	GetYourGuideAPI getYourGuideAPI;
 
@@ -50,7 +50,7 @@ public class TravelOptimizer implements Serializable{
 						.toString(DateTimeFormat.forPattern("YYYY-MM-dd")));
 		if (foundFlights != null) {
 			for (Flight flight : foundFlights) {
-				// should be only one 
+				// should be only one
 				travel.setDefaultFlight(flight);
 				flight.printOut();
 			}
@@ -68,22 +68,19 @@ public class TravelOptimizer implements Serializable{
 			}
 
 			Itinerary itinerary = new Itinerary();
-			
-			String destinationLocationTop = destination.getDestination().getDestinationLocation();
+
+			String destinationLocationTop = destination.getDestination()
+					.getDestinationLocation();
 			itinerary.setTopDestination(destinationLocationTop);
 
-			System.out.println("Top Dest " + i + " "
-					+ destinationLocationTop);
+			System.out.println("Top Dest " + i + " " + destinationLocationTop);
 			// find flights from origin to top 5
 			List<Flight> fromOriginToTopFlights = sabreAPI.searchFlights(
 					travel.getStartPlace(),
 					destinationLocationTop,
-					travel.getStartTime()
-							.plusDays(
-									travel.getDurationAtAll()
-											- travel.getDurationAtStop())
-							.toString(DateTimeFormat.forPattern("YYYY-MM-dd")),
-					travel.getStartTime().plusDays(travel.getDurationAtAll())
+					travel.getStartTime().toString(
+							DateTimeFormat.forPattern("YYYY-MM-dd")), travel
+							.getStartTime().plusDays(travel.getDurationAtAll())
 							.toString(DateTimeFormat.forPattern("YYYY-MM-dd")));
 			if (fromOriginToTopFlights != null) {
 				for (Flight flight : fromOriginToTopFlights) {
@@ -114,40 +111,55 @@ public class TravelOptimizer implements Serializable{
 			if (itinerary.getFromOriginToTop() != null
 					&& itinerary.getFromTopToDestination() != null) {
 				travel.addItinerary(itinerary);
-				
+
 				// find top attractions at topDestination
-				if(itinerary.getTopDestination().equals("WAS") || itinerary.getTopDestination().equals("NYC")) {
+				if (itinerary.getTopDestination().equals("WAS")
+						|| itinerary.getTopDestination().equals("NYC")) {
 					String topDestinationLongName = null;
-					if(itinerary.getTopDestination().equals("WAS")) {
+					if (itinerary.getTopDestination().equals("WAS")) {
 						topDestinationLongName = "Washington, DC";
-					} else if(itinerary.getTopDestination().equals("NYC")) {
+					} else if (itinerary.getTopDestination().equals("NYC")) {
 						topDestinationLongName = "New%20York";
 					}
-					
-					TourResponse tourResponse = getYourGuideAPI.searchTours(topDestinationLongName, travel.getStartTime().toString(DateTimeFormat.forPattern("YYYY-MM-dd'T'HH:mm:ss")));
+
+					TourResponse tourResponse = getYourGuideAPI
+							.searchTours(
+									topDestinationLongName,
+									travel.getStartTime()
+											.toString(
+													DateTimeFormat
+															.forPattern("YYYY-MM-dd'T'HH:mm:ss")));
 					List<Tour> tours = tourResponse.getData().getTours();
-					// add Tours to Itinerary as long as budget last but no more then 3
+					// add Tours to Itinerary as long as budget last but no more
+					// then 3
 					int nrTours = 0;
 					for (Tour tour : tours) {
-						if(nrTours >= 3)
+						if (nrTours >= 3)
 							break;
-						if(itinerary.getTotalPrice() + Double.valueOf(tour.getPrice().getValues().getAmount().toString()) < travel.getBudget()){
+						if (itinerary.getTotalPrice()
+								+ Double.valueOf(tour.getPrice().getValues()
+										.getAmount().toString()) < travel
+									.getBudget()) {
 							itinerary.addTour(tour);
-							log.info("added tour "+tour.getTitle() + " Price: "+ tour.getPrice().getValues().getAmount().toString());
+							log.info("added tour "
+									+ tour.getTitle()
+									+ " Price: "
+									+ tour.getPrice().getValues().getAmount()
+											.toString());
 						}
 						nrTours++;
 					}
-					
+
 				} else {
-					log.info("top Destination LogName '"+topDestination+"'not Found !!!!!!!!!!!!!!!!");
+					log.info("top Destination LogName '" + topDestination
+							+ "'not Found !!!!!!!!!!!!!!!!");
 				}
-				
+
 			}
 		}
-		
 
 		Collections.sort(travel.getItineraries(), new Itinerary());
-		
+
 		return travel;
 	}
 

@@ -38,6 +38,8 @@ public class ParseInstaFlightService {
 			.path("PTC_FareBreakdown")
 			.path("PassengerFare")
 			.path("TotalFare");
+			System.out.println("_____________________________");
+			System.out.println(totalFare.path("Amount").getTextValue());
 			flight.setPrice(Double.valueOf(totalFare.path("Amount").getTextValue()));
 			flight.setCurrency(totalFare.path("CurrencyCode").getTextValue());
 			

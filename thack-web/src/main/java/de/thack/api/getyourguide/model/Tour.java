@@ -66,6 +66,9 @@ public class Tour {
     private List<Duration> durations = new ArrayList<Duration>();
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    
+    @JsonIgnore
+    private String titlePic;
 
     /**
      * 
@@ -77,7 +80,19 @@ public class Tour {
         return tourId;
     }
 
-    /**
+    public String getTitlePic() {
+    	
+    	String url2 = pictures.get(0).getUrl();
+    	String url = url2.substring(0, url2.length() - 15);
+    	
+		return url + "2.jpg";
+	}
+
+	public void setTitlePic(String titlePic) {
+		this.titlePic = titlePic;
+	}
+
+	/**
      * 
      * @param tourId
      *     The tour_id
