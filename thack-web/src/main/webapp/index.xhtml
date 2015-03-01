@@ -31,29 +31,39 @@
 					<div class="container">
 						<div class="carousel-caption">
 							<h1>Your journey starts here</h1>
-							<p>Find the best journey with top attractions matching your budget.</p>
-							<h:form id="searchForm" styleClass="form-horizontal" style="margin-top:50px;">
+							<p>Find the best journey with top attractions matching your
+								budget.</p>
+							<h:form id="searchForm" styleClass="form-horizontal"
+								style="margin-top:50px;">
 								<div class="form-group">
 									<label for="start_place" class="col-sm-4 control-label">Origin</label>
 									<div class="col-sm-8">
-										<h:inputText id="start_place" value="#{travel.startPlace}" />
+										<h:selectOneMenu value="#{travel.startPlace}"
+											style="width: 179px; color: #000;">
+											<f:selectItem itemValue="MIA" itemLabel="Miami" />
+											<f:selectItem itemValue="DFW" itemLabel="Dallas" />
+										</h:selectOneMenu>
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="stop_place" class="col-sm-4 control-label">Destination</label>
 									<div class="col-sm-8">
-										<h:inputText id="stop_place" value="#{travel.stopPlace}" />
+										<h:selectOneMenu value="#{travel.stopPlace}"
+											style="width: 179px; color: #000;">
+											<f:selectItem itemValue="LAS" itemLabel="Las Vegas" />
+											<f:selectItem itemValue="SFO" itemLabel="San Francisco" />
+										</h:selectOneMenu>
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="start_place" class="col-sm-4 control-label">Departing</label>
+									<label for="start_time" class="col-sm-4 control-label">Departing</label>
 									<div class="col-sm-8">
 										<h:inputText id="start_time" value="#{travel.startTime}"
 											converter="localDateConverter" />
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="stop_place" class="col-sm-4 control-label">Duration
+									<label for="stop_duration" class="col-sm-4 control-label">Duration
 										at Destination</label>
 									<div class="col-sm-8">
 										<h:inputText id="stop_duration"
@@ -61,7 +71,7 @@
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="stop_place" class="col-sm-4 control-label">Overall
+									<label for="overall_duration" class="col-sm-4 control-label">Overall
 										Duration</label>
 									<div class="col-sm-8">
 										<h:inputText id="overall_duration"
@@ -69,7 +79,7 @@
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="stop_place" class="col-sm-4 control-label">Budget
+									<label for="budget" class="col-sm-4 control-label">Budget
 										to Spend</label>
 									<div class="col-sm-8">
 										<h:inputText id="budget" value="#{travel.budget}" />
@@ -77,8 +87,9 @@
 								</div>
 								<div class="form-group">
 									<div class="col-sm-offset-4 col-sm-8">
-										<h:commandButton id="see_more" styleClass="btn btn-lg btn-default"
-											value="SeeMore!" action="#{searchController.search}" />
+										<h:commandButton id="see_more"
+											styleClass="btn btn-lg btn-default" value="SeeMore!"
+											action="#{searchController.search}" />
 									</div>
 								</div>
 							</h:form>
@@ -176,7 +187,8 @@
 					</div>
 					<div class="col-md-5">
 						<img class="featurette-image img-responsive thumbnail"
-							data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="http://www.jssor.com/img/landscape/08.jpg"></img>
+							data-src="holder.js/500x500/auto" alt="Generic placeholder image"
+							src="http://www.jssor.com/img/landscape/08.jpg"></img>
 					</div>
 				</div>
 

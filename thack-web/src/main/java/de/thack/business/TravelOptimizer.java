@@ -114,14 +114,20 @@ public class TravelOptimizer implements Serializable {
 
 				// find top attractions at topDestination
 				if (itinerary.getTopDestination().equals("WAS")
-						|| itinerary.getTopDestination().equals("NYC")) {
+						|| itinerary.getTopDestination().equals("NYC")
+						|| itinerary.getTopDestination().equals("CHI")
+						|| itinerary.getTopDestination().equals("PHX")) {
 					String topDestinationLongName = null;
 					if (itinerary.getTopDestination().equals("WAS")) {
 						topDestinationLongName = "Washington, DC";
 					} else if (itinerary.getTopDestination().equals("NYC")) {
 						topDestinationLongName = "New%20York";
+					} else if (itinerary.getTopDestination().equals("CHI")) {
+						topDestinationLongName = "Chicago";
+					} else if (itinerary.getTopDestination().equals("PHX")) {
+						topDestinationLongName = "Phenix"; 
+						
 					}
-
 					TourResponse tourResponse = getYourGuideAPI
 							.searchTours(
 									topDestinationLongName,
